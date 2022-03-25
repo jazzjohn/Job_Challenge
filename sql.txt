@@ -1,4 +1,4 @@
-SELECT CustomerName,
+CREATE TABLE NewTable AS SELECT CustomerName,
 CASE
 WHEN (Month='Apr-20' AND Score='No Submission') THEN 1
 WHEN Month='Apr-20' AND Score='Opt Out' THEN 2
