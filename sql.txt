@@ -1,0 +1,85 @@
+SELECT CustomerName,
+CASE
+WHEN (Month='Apr-20' AND Score='No Submission') THEN 1
+WHEN Month='Apr-20' AND Score='Opt Out' THEN 2
+WHEN Month='Apr-20' AND Score='Very Dissatisfied' THEN 3
+WHEN Month='Apr-20' AND Score='Somewhat Dissatisfied' THEN 4
+WHEN Month='Apr-20' AND Score='Somewhat Satisfied' THEN 5
+WHEN Month='Apr-20' AND Score='Very Satisfied' THEN 6
+ELSE NULL
+END AS 'Apr-20',
+CASE
+WHEN Month='May-20' AND Score='No Submission' THEN 1
+WHEN Month='May-20' AND Score='Opt Out' THEN 2
+WHEN Month='May-20' AND Score='Very Dissatisfied' THEN 3
+WHEN Month='May-20' AND Score='Somewhat Dissatisfied' THEN 4
+WHEN Month='May-20' AND Score='Somewhat Satisfied' THEN 5
+WHEN Month='May-20' AND Score='Very Satisfied' THEN 6
+ELSE NULL
+END AS 'May-20',
+CASE
+WHEN Month='Jun-20' AND Score='No Submission' THEN 1
+WHEN Month='Jun-20' AND Score='Opt Out' THEN 2
+WHEN Month='Jun-20' AND Score='Very Dissatisfied' THEN 3
+WHEN Month='Jun-20' AND Score='Somewhat Dissatisfied' THEN 4
+WHEN Month='Jun-20' AND Score='Somewhat Satisfied' THEN 5
+WHEN Month='Jun-20' AND Score='Very Satisfied' THEN 6
+ELSE NULL
+END AS 'Jun-20',
+CASE
+WHEN Month='Jul-20' AND Score='No Submission' THEN 1
+WHEN Month='Jul-20' AND Score='Opt Out' THEN 2
+WHEN Month='Jul-20' AND Score='Very Dissatisfied' THEN 3
+WHEN Month='Jul-20' AND Score='Somewhat Dissatisfied' THEN 4
+WHEN Month='Jul-20' AND Score='Somewhat Satisfied' THEN 5
+WHEN Month='Jul-20' AND Score='Very Satisfied' THEN 6
+ELSE NULL
+END AS 'Jul-20',
+CASE
+WHEN Month='Aug-20' AND Score='No Submission' THEN 1
+WHEN Month='Aug-20' AND Score='Opt Out' THEN 2
+WHEN Month='Aug-20' AND Score='Very Dissatisfied' THEN 3
+WHEN Month='Aug-20' AND Score='Somewhat Dissatisfied' THEN 4
+WHEN Month='Aug-20' AND Score='Somewhat Satisfied' THEN 5
+WHEN Month='Aug-20' AND Score='Very Satisfied' THEN 6
+ELSE NULL
+END AS 'Aug-20',
+CASE
+WHEN Month='Sep-20' AND Score='No Submission' THEN 1
+WHEN Month='Sep-20' AND Score='Opt Out' THEN 2
+WHEN Month='Sep-20' AND Score='Very Dissatisfied' THEN 3
+WHEN Month='Sep-20' AND Score='Somewhat Dissatisfied' THEN 4
+WHEN Month='Sep-20' AND Score='Somewhat Satisfied' THEN 5
+WHEN Month='Sep-20' AND Score='Very Satisfied' THEN 6
+ELSE NULL
+END AS 'Sep-20',
+CASE
+WHEN Month='Oct-20' AND Score='No Submission' THEN 1
+WHEN Month='Oct-20' AND Score='Opt Out' THEN 2
+WHEN Month='Oct-20' AND Score='Very Dissatisfied' THEN 3
+WHEN Month='Oct-20' AND Score='Somewhat Dissatisfied' THEN 4
+WHEN Month='Oct-20' AND Score='Somewhat Satisfiedn' THEN 5
+WHEN Month='Oct-20' AND Score='Very Satisfied' THEN 6
+ELSE NULL
+END AS 'Oct-20',
+CASE
+WHEN Month='Nov-20' AND Score='No Submission' THEN 1
+WHEN Month='Nov-20' AND Score='Opt Out' THEN 2
+WHEN Month='Nov-20' AND Score='Very Dissatisfied' THEN 3
+WHEN Month='Nov-20' AND Score='Somewhat Dissatisfied' THEN 4
+WHEN Month='Nov-20' AND Score='Somewhat Satisfied' THEN 5
+WHEN Month='Nov-20' AND Score='Very Satisfied' THEN 6
+ELSE NULL
+END AS 'Nov-20',
+CASE
+WHEN Month='Dec-20' AND Score='No Submission' THEN 1
+WHEN Month='Dec-20' AND Score='Opt Out' THEN 2
+WHEN Month='Dec-20' AND Score='Very Dissatisfied' THEN 3
+WHEN Month='Dec-20' AND Score='Somewhat Dissatisfied' THEN 4
+WHEN Month='Dec-20' AND Score='Somewhat Satisfied' THEN 5
+WHEN Month='Dec-20' AND Score='Very Satisfied' THEN 6
+ELSE NULL
+END AS 'Dec-20'
+FROM `customer`
+GROUP BY Id
+ORDER BY CustomerName;
